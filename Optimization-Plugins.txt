@@ -3,3 +3,21 @@ WP Meteor
 Smush
 
 -- Note: Use Webp Format
+
+==========================
+Customly Optimize JS/CSS
+==========================
+
+- Eliminating Render-Blocking CSS
+
+<link rel="stylesheet" href="/css/style.css"> change this to 
+
+<link rel="preload" href="/css/style.css" as="style" onload="this.rel='stylesheet'">
+
+- Eliminating Render-Blocking JavaScript
+
+<script src="{{ 'theme.min.v1.js' | asset_url }}"></script> change this to 
+
+Use async or defer
+<script src="{{ 'theme.min.v1.js' | asset_url }}" defer></script>
+<script src="{{ 'theme.min.v1.js' | asset_url }}" async></script>
