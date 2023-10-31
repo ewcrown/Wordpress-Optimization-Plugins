@@ -1,6 +1,7 @@
 PhastPress
 WP Meteor
 Smush
+Seraphinite Accelerator 
 
 -- Note: Use Webp Format
 
